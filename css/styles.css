@@ -431,8 +431,9 @@ img {
   background-color: #2196f3;
   outline: #2196f3;
 }
+
 .checkbox:focus + .custom-checkbox {
-  border-color: #2196f3;
+  outline: 1px solid #2196f3;
 }
 .custom-checkbox-icon {
   opacity: 0;
@@ -442,6 +443,7 @@ img {
 .checkbox:checked + .custom-checkbox .custom-checkbox-icon {
   opacity: 1;
 }
+
 .form-policy-description {
   font-weight: 400;
   font-size: 14px;
