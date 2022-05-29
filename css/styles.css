@@ -314,9 +314,10 @@ img {
 
 .btn-close {
   fill: #000000;
+  transition: fill var(--mid-anim);
 }
-.btn-close:hover,
-.btn-close:focus {
+.modal-btn:hover .btn-close,
+.modal-btn:focus .btn-close {
   fill: #2196f3;
 }
 
@@ -343,6 +344,9 @@ img {
 }
 .form-group:not(:last-child) {
   margin-bottom: 10px;
+}
+.form-group.textarea {
+  margin-bottom: 20px;
 }
 .form-group-label {
   display: block;
@@ -382,7 +386,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -427,6 +430,9 @@ img {
 .checkbox:checked + .custom-checkbox {
   background-color: #2196f3;
   outline: #2196f3;
+}
+.checkbox:focus + .custom-checkbox {
+  border-color: #2196f3;
 }
 .custom-checkbox-icon {
   opacity: 0;
